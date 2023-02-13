@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2>Add a Birthday</h2>
+                <!-- TODO: Create a form for users to submit a name, a month, and a day -->
+                <form action="/" method="post">
+                    <input autocomple="off" autofocus type="text" name="name" placeholder="Name">
+                    <input autocomple="off" type="number" min="1" max="12" name="month" limit="1-12" placeholder="Month">
+                    <input autocomple="off" type="number" min="1" max="31" name="day" placeholder="Day">
+                    <input type="submit" value="Add Birthday"></input>
+                </form>
+
+            </div>
+
+            <div class="section">
+
+                <h2>All Birthdays</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+                        {%  for birthdays in birthdays  %}
+                            <tr>
+                                <td> {{birthdays.name}} </td>
+                                <td> {{birthdays.month }}/{{birthdays.day}} </td>
+                                <td>
+                                    <form action="/delete" method="post">
+                                        <input name="id" type="hidden" value="{{birthdays.id}}">
+                                        <input class="bottom" type="submit" value="Delete">
+                                    </form>
+                                </td>
+                        {%  endfor  %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>By Mat</footer>
+    
+    </body>
+</html>

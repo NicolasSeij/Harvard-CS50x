@@ -1,0 +1,72 @@
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                       description                                                                                                        |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Theft of the CS50 duck took place at 10:15am at the Humphrey Street bakery. Interviews were conducted today with three witnesses who were present at the time – each of their interview transcripts mentions the bakery. |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  name   |                                                                                                                                                     transcript                                                                                                                                                      |
++---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Ruth    | Sometime within ten minutes of the theft, I saw the thief get into a car in the bakery parking lot and drive away. If you have security footage from the bakery parking lot, you might want to look for cars that left the parking lot in that time frame.                                                          |
+| Eugene  | I don't know the thief's name, but it was someone I recognized. Earlier this morning, before I arrived at Emma's bakery, I was walking by the ATM on Leggett Street and saw the thief there withdrawing some money.                                                                                                 |
+| Raymond | As the thief was leaving the bakery, they called someone who talked to them for less than a minute. In the call, I heard the thief say that they were planning to take the earliest flight out of Fiftyville tomorrow. The thief then asked the person on the other end of the phone to purchase the flight ticket. |
++---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------+---------------+----------+
+|  name   | license_plate | activity |
++---------+---------------+----------+
+| Vanessa | 5P2BI95       | exit     |
+| Bruce   | 94KL13X       | exit     |
+| Barry   | 6P58WS2       | exit     |
+| Luca    | 4328GD8       | exit     |
+| Sofia   | G412CB7       | exit     |
+| Iman    | L93JTIZ       | exit     |
+| Diana   | 322W7JE       | exit     |
+| Kelsey  | 0NTHK55       | exit     |
++---------+---------------+----------+
++---------+------------------+
+|  name   | transaction_type |
++---------+------------------+
+| Bruce   | withdraw         |
+| Diana   | withdraw         |
+| Brooke  | withdraw         |
+| Kenny   | withdraw         |
+| Iman    | withdraw         |
+| Luca    | withdraw         |
+| Taylor  | withdraw         |
+| Benista | withdraw         |
++---------+------------------+
++----------------+-------------+----------------+---------------+
+|     caller     | caller_name |    receiver    | receiver_name |
++----------------+-------------+----------------+---------------+
+| (130) 555-0289 | Sofia       | (996) 555-8899 | Jack          |
+| (499) 555-9472 | Kelsey      | (892) 555-8872 | Larry         |
+| (367) 555-5533 | Bruce       | (375) 555-8161 | Robin         |
+| (609) 555-5876 | Kathryn     | (389) 555-5198 | Luca          |
+| (499) 555-9472 | Kelsey      | (717) 555-1342 | Melissa       |
+| (286) 555-6063 | Taylor      | (676) 555-6554 | James         |
+| (770) 555-1861 | Diana       | (725) 555-3243 | Philip        |
+| (031) 555-6622 | Carina      | (910) 555-3251 | Jacqueline    |
+| (826) 555-1652 | Kenny       | (066) 555-9701 | Doris         |
+| (338) 555-6650 | Benista     | (704) 555-2131 | Anna          |
++----------------+-------------+----------------+---------------+
++----+-------------------+------------------------+-------+-----+------+--------+
+| id | origin_airport_id | destination_airport_id | month | day | hour | minute |
++----+-------------------+------------------------+-------+-----+------+--------+
+| 36 | Fiftyville        | New York City          | 7     | 29  | 8    | 20     |
++----+-------------------+------------------------+-------+-----+------+--------+
++------------------------+--------+----------------+---------------+
+| destination_airport_id |  name  |  phone_number  | license_plate |
++------------------------+--------+----------------+---------------+
+| New York City          | Doris  | (066) 555-9701 | M51FA04       |
+| New York City          | Sofia  | (130) 555-0289 | G412CB7       |
+| New York City          | Bruce  | (367) 555-5533 | 94KL13X       |
+| New York City          | Edward | (328) 555-1152 | 130LD9Z       |
+| New York City          | Kelsey | (499) 555-9472 | 0NTHK55       |
+| New York City          | Taylor | (286) 555-6063 | 1106N58       |
+| New York City          | Kenny  | (826) 555-1652 | 30G67EN       |
+| New York City          | Luca   | (389) 555-5198 | 4328GD8       |
++------------------------+--------+----------------+---------------+
++-------+
+| name  |
++-------+
+| Bruce |
++-------+
